@@ -46,10 +46,9 @@
 			<div class="container">
 				<span class="close" title="Close Modal" onclick="document.getElementById('id02').style.display='none'">&times;</span>
 				<h1 class="module-header">Welcome Back!</h1>
-
 				<hr>
 				<label for="username"><b>Username</b></label>
-				<input type="text" placeholder="Enter Email" name="email" required>
+				<input type="text" placeholder="Enter Username" name="username" required>
 
 				<label for="psw"><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" required>
@@ -57,8 +56,32 @@
 				<div class="clearfix">
 					<button type="submit" class="signinbtn">Sign In</button>
 				</div>
-				<p class="model-para">Not a member? <a href="#" style="color:dodgerblue">Sign Up</a>.</p>
+				<p class="model-para" onclick="signUpModel()">Not a member? <a href="#" style="color:dodgerblue" >Sign Up</a>.</p>
 			</div>
+		</form>
+	</div>
+	<div class="container">
+		<div class="center">
+			<input class="bodyButtons" type="button" value="All Posts" onclick="document.getElementById('id03').style.display='block'" style="width:auto;"></input>
+			<input class="bodyButtons" type="button" value="Create Post" onclick="document.getElementById('id04').style.display='block'" style="width:auto;"></input>
+		</div>
+	</div>
+	<div id="id04" class="modal">
+		<form class="modal-content" action="/action_page.php">
+			<div class="container">
+				<span class="close" title="Close Modal" onclick="document.getElementById('id04').style.display='none'">&times;</span>
+				<h1 class="module-header">Pen Your Post</h1>
+				<hr>
+				<label for="title"><b>Title</b></label>
+				<input id="title" type="text" placeholder="Enter title of your post" name="title" required>
+
+				<label for="content" ><b>Contents</b></label><br>
+				<textarea id="content" name="content" rows="4" cols="50" placeholder="Enter the contents of your post"></textarea>
+
+				<div class="clearfix">
+					<button type="submit" class="createbtn">Create</button>
+				</div>
+				</div>
 		</form>
 	</div>
 <script src="/scripts/index.js" defer></script>
