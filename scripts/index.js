@@ -7,7 +7,7 @@
 			modal.style.display = "none";
 		  }
 		}
-				// Get the modal
+		// Get the second modal
 		var modal = document.getElementById('id02');
 
 		// When the user clicks anywhere outside of the modal, close it
