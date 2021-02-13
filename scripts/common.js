@@ -25,3 +25,7 @@
 				modal.style.display = "none";
 			}
 		}
+
+		function navigateToAllPosts(){
+			location.replace('./html/postslist.html');
+		}

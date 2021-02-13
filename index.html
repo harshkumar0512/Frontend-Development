@@ -25,16 +25,16 @@
 				<h1 class="module-header">Get Started</h1>
 				<hr>
 				<label for="name"><b>Name</b></label>
-				<input type="text" placeholder="Enter your name" name="name" required>
+				<input type="text" id="name" placeholder="Enter your name" name="name" required>
 
 				<label for="username"><b>Username</b></label>
-				<input type="text" placeholder="Enter your username" name="username" required>
+				<input type="text" id="username" placeholder="Enter your username" name="username" required>
 
 				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter your password" name="psw" required>
+				<input type="password" id="psw" placeholder="Enter your password" name="psw" required>
 
 				<label for="psw-repeat"><b>Confirm Password</b></label>
-				<input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
+				<input type="password" id="psw-repeat" placeholder="Re-enter your password" name="psw-repeat" required>
 
 				<div class="clearfix">
 					<button type="submit" class="signupbtn">Sign Up</button>
@@ -57,13 +57,13 @@
 				<div class="clearfix">
 					<button type="submit" class="signinbtn">Sign In</button>
 				</div>
-				<p class="model-para" onclick="signUpModel()">Not a member? <a href="#" style="color:dodgerblue" >Sign Up</a>.</p>
+				<p class="model-para" >Not a member? <a href="#" style="color:dodgerblue" onclick="signUpModel()">Sign Up</a>.</p>
 			</div>
 		</form>
 	</div>
 	<div class="container">
 		<div class="center">
-			<input class="bodyButtons" type="button" value="All Posts" onclick="document.getElementById('id03').style.display='block'" style="width:auto;"></input>
+			<input class="bodyButtons" type="button" value="All Posts" onclick="navigateToAllPosts()" style="width:auto;"></input>
 			<input class="bodyButtons" type="button" value="Create Post" onclick="document.getElementById('id04').style.display='block'" style="width:auto;"></input>
 		</div>
 	</div>
@@ -79,13 +79,13 @@
 				<label for="content" ><b>Contents</b></label><br>
 				<textarea id="content" name="content" rows="4" cols="50" placeholder="Enter the contents of your post"></textarea>
 
-				<div class="clearfix">
-					<button type="submit" class="createbtn">Create</button>
+				<div class="clearfix" style="text-align:center;">
+					<button type="submit" class="createbtn" style="width: 20%;" >Create</button>
 				</div>
 				</div>
 		</form>
 	</div>
-<script src="/scripts/index.js" defer></script>
+	<script src="./scripts/index.js" defer></script>
 </body>
 
 </html>
