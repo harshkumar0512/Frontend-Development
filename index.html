@@ -10,57 +10,57 @@
 </head>
 
 <body>
-<!-- TODO: Include all your code for the header and home page here -->
-<div class="header">
-	<input class="topButtons" type="button" value="Sign Up" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
-	<input class="topButtons" type="button" value="Sign In" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
-	<a id="pageTitle" class="logo-title">ScriBBler</a>
-	<p class="middleText">Explore, Imagine, Create</p>
-</div>
-<div id="id01" class="modal">
-	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-	<form class="modal-content" action="/action_page.php">
-		<div class="container">
-			<h1 class="module-header">Get Started</h1>
-			<hr>
-			<label for="name"><b>Name</b></label>
-			<input type="text" placeholder="Enter your name" name="name" required>
+	<!-- TODO: Include all your code for the header and home page here -->
+	<div class="header">
+		<input class="topButtons" type="button" value="Sign Up" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+		<input class="topButtons" type="button" value="Sign In" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+		<a id="pageTitle" class="logo-title">ScriBBler</a>
+		<p class="middleText">Explore, Imagine, Create</p>
+	</div>
+	<div id="id01" class="modal">
+		<form class="modal-content" action="/action_page.php">
+			<div class="container">
+				<span class="close" title="Close Modal" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+				<h1 class="module-header">Get Started</h1>
+				<hr>
+				<label for="name"><b>Name</b></label>
+				<input type="text" placeholder="Enter your name" name="name" required>
 
-			<label for="username"><b>Username</b></label>
-			<input type="text" placeholder="Enter your username" name="username" required>
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter your username" name="username" required>
 
-			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter your password" name="psw" required>
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter your password" name="psw" required>
 
-			<label for="psw-repeat"><b>Confirm Password</b></label>
-			<input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
+				<label for="psw-repeat"><b>Confirm Password</b></label>
+				<input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
 
-			<div class="clearfix">
-				<button type="submit" class="signupbtn">Sign Up</button>
+				<div class="clearfix">
+					<button type="submit" class="signupbtn">Sign Up</button>
+				</div>
 			</div>
-		</div>
-	</form>
-</div>
-<div id="id02" class="modal">
-	<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-	<form class="modal-content" action="/action_page.php">
-		<div class="container">
-			<h1 class="module-header">Welcome Back!</h1>
+		</form>
+	</div>
+	<div id="id02" class="modal">
+		<form class="modal-content" action="/action_page.php">
+			<div class="container">
+				<span class="close" title="Close Modal" onclick="document.getElementById('id02').style.display='none'">&times;</span>
+				<h1 class="module-header">Welcome Back!</h1>
 
-			<hr>
-			<label for="username"><b>Username</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
+				<hr>
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
 
-			<label for="psw"><b>Password</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" required>
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
 
-			<div class="clearfix">
-				<button type="submit" class="signinbtn">Sign In</button>
+				<div class="clearfix">
+					<button type="submit" class="signinbtn">Sign In</button>
+				</div>
+				<p class="model-para">Not a member? <a href="#" style="color:dodgerblue">Sign Up</a>.</p>
 			</div>
-			<p>Not a member? <a href="#" style="color:dodgerblue">Sign Up</a>.</p>
-		</div>
-	</form>
-</div>
+		</form>
+	</div>
 <script src="/scripts/index.js" defer></script>
 </body>
 
