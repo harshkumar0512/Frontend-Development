@@ -47,59 +47,12 @@ h1{
     }
 /* Set background property for image */
 body {
-    background-color: #ffeedd;
+    background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
 }
 * {box-sizing: border-box;}
-
-.post-card{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: initial;
-    background-color: lightgrey;
-    padding:0%;
-    border-radius:5px;
-    margin:10px 10px;
-    color: white;
-    width: 40%;
-    font-family: sans-serif;
-}
-.post-block{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.author{
-    background-color: white;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    color: black;
-    text-align: center;
-    padding: 2%;
-    width: 20%;
-    height: 100%;
-}
-.post-section{
-    background-color: lightgrey;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: black;
-    padding: 2%;
-    width: auto;
-    height: auto;
-}
-.post-title{
-    color: grey;
-    font-family: 'Abel', sans-serif;
-}
-i{
-    float: right;
-    color: grey;
-    cursor: pointer;
-}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -218,6 +171,20 @@ hr {
     text-align: center;
     font-family: 'Abel', sans-serif;
 }
+
+.author{
+    padding-top: 2%;
+}
+.post-desc{
+    margin: auto;
+}
+#userComments{
+
+}
+#addEventNames{
+margin: 2% auto 10% auto;
+}
+
 
 /* Change styles for signup button on extra small screens */
 @media screen and (max-width: 300px) {
