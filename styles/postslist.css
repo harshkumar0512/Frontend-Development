@@ -54,15 +54,111 @@ body {
 }
 * {box-sizing: border-box;}
 
+.post-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: initial;
+    background-color: lightgrey;
+    padding:0%;
+    border-radius:5px;
+    margin:10px 10px;
+    color: white;
+    width: 40%;
+    font-family: sans-serif;
+}
+.post-block{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.author{
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    text-align: center;
+    padding: 2%;
+    width: 20%;
+    height: 100%;
+}
+.post-section{
+    background-color: lightgrey;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    padding: 2%;
+    width: auto;
+    height: auto;
+}
+.post-title{
+    color: grey;
+    font-family: 'Abel', sans-serif;
+}
+i{
+    float: right;
+    color: grey;
+    cursor: pointer;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Full-width textarea fields */
+textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Add a background color when the textarea get focus */
+textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
 /* Float signup buttons and add an equal width */
 .signupbtn {
-  float: left;
-  width: 100%;
+    float: left;
+    width: 100%;
 }
 
 /* Add padding to container elements */
 .container {
-  padding: 16px;
+    padding: 16px;
+}
+
+/* The Close Button (x) */
+.close {
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    right: 20px;
+    top: 20px;
+    color: #aaaaaa;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* The Modal (background) */
