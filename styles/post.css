@@ -1,0 +1,227 @@
+input.topButtons {
+ width: 90px;
+ padding: 10px;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 90%;
+ background: #0000ff;
+ color: #fff;
+ float: right;                  
+ 
+ margin: 10px 10px 0px 0px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+.logo-title {
+    font-family: 'Montez', cursive;
+    font-size: 50px;
+    color: #112fb4;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;
+}
+h1{
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+}
+.middleText{
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 0;
+    margin: 0 0 0px 10px;
+    }
+/* Set background property for image */
+body {
+    background-color: #ffeedd;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {box-sizing: border-box;}
+
+.post-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: initial;
+    background-color: lightgrey;
+    padding:0%;
+    border-radius:5px;
+    margin:10px 10px;
+    color: white;
+    width: 40%;
+    font-family: sans-serif;
+}
+.post-block{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.author{
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    text-align: center;
+    padding: 2%;
+    width: 20%;
+    height: 100%;
+}
+.post-section{
+    background-color: lightgrey;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    padding: 2%;
+    width: auto;
+    height: auto;
+}
+.post-title{
+    color: grey;
+    font-family: 'Abel', sans-serif;
+}
+i{
+    float: right;
+    color: grey;
+    cursor: pointer;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Full-width textarea fields */
+textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Add a background color when the textarea get focus */
+textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Float signup buttons and add an equal width */
+.signupbtn {
+    float: left;
+    width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Close Button (x) */
+.close {
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    right: 20px;
+    top: 20px;
+    color: #aaaaaa;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 2px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  right: 20px;
+  top: 20px;
+  color: #aaaaaa;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.model-para{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+   .signupbtn {
+     width: 100%;
+  }
+}
