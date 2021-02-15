@@ -5,7 +5,6 @@
     <!-- TODO: Include Font Awesome file here -->
     <link href='../styles/post.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/efd7ce0474.js" crossorigin="anonymous"></script>
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -31,7 +30,7 @@
                 <p class="author">Srishti Gupta
                     <span>
                         <button class="post-edit" id="edit-btn" onclick="editPost()" style="background-color: crimson; float: right;width: 7%;padding: 10px 10px; margin: auto">
-                            Edit <i class="fa fa-edit"></i>
+                            <span id="btn-name">Edit </span> <i class="fa fa-edit" id="icon"></i>
                         </button>
                     </span>
                 </p>
@@ -128,6 +127,7 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <script src="https://kit.fontawesome.com/efd7ce0474.js" crossorigin="anonymous"></script>
     <script src="../scripts/post.js" defer></script>
 </body>
 

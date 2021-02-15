@@ -19,30 +19,34 @@
 		function editPost(){
 			const paragraph = document.getElementById("paraText");
 			const title = document.getElementById("postTitle01");
-			const edit_button = document.getElementById("edit-button");
-			const end_button = document.getElementById("end-editing");
-
-			edit_button.addEventListener("click", function() {
+			const edit_button = document.getElementById("edit-btn");
+			//const save_button = document.getElementById("save-btn");
+			const icon = document.getElementById('icon');
+			const text = document.getElementById('btn-name');
+			if(icon.classList.contains('fa-edit')){
 				paragraph.contentEditable = true;
-				paragraph.style.backgroundColor = "#dddbdb";
-			} );
-
-			end_button.addEventListener("click", function() {
+				//paragraph.style.backgroundColor = "#dddbdb";
+				paragraph.style.border = "solid 1px pink";
+				title.contentEditable = true;
+				//title.style.backgroundColor = "#dddbdb";
+				title.style.border = "solid 1px pink"
+				//edit_button.style.visibility = "hidden";
+				//save_button.style.display = "block";
+				icon.classList.remove('fa-edit');
+				icon.classList.add('fa-save');
+				text.innerHTML = 'Save';
+			} else{
 				paragraph.contentEditable = false;
-				paragraph.style.backgroundColor = "#ffe44d";
-			} )
-
-			var editButton = listItem.querySelector("button.edit");
-
-			if(containsClass) {
-				label.innerText = editInput.value;
-				editButton.textContent = "Edit";
-			} else {
-				editInput.value = label.innerText;
-				editButton.textContent = "Save";
+				paragraph.style.border = "1px";
+				title.contentEditable = false;
+				title.style.border = "1px";
+				icon.classList.remove('fa-save');
+				icon.classList.add('fa-edit');
+				text.innerHTML = 'Edit';
 			}
 
 		}
+
 		function addComments(id){
 			var addEventName = id.value +'<br>';
 			var a = document.getElementById('userComments');

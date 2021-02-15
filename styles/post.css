@@ -49,6 +49,7 @@ h1{
 body {
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -172,17 +173,29 @@ hr {
     font-family: 'Abel', sans-serif;
 }
 
+.post-block{
+    margin: 2% 2% 10% 2%;
+}
+
+.post-title{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
 .author{
     padding-top: 2%;
+}
+.post-save{
+    display:none;
 }
 .post-desc{
     margin: auto;
 }
 #userComments{
-
+    border:solid 1px black;
 }
 #addEventNames{
-margin: 2% auto 10% auto;
+    margin: 2% auto 10% auto;
 }
 
 
