@@ -1,3 +1,4 @@
+/* style for buttons in header */
 input.topButtons {
     width: 90px;
     padding: 10px;
@@ -28,7 +29,7 @@ button:hover {
     opacity: 1;
 }
 
-
+/* Set a style for logo */
 .logo-title {
     font-family: 'Montez', cursive;
     font-size: 50px;
