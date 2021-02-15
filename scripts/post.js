@@ -50,7 +50,7 @@
 		function addComments(id){
 			var addEventName = id.value +'<br>';
 			var a = document.getElementById('userComments');
-			document.getElementById('addEventNames').innerHTML += '<p>'+addEventName+'</p>';
+			document.getElementById('addEventNames').innerHTML += '<p class="user_comment">'+addEventName+'</p>';
 			a.value=a.defaultValue;
 		}
 		var numberOfClicks=0;

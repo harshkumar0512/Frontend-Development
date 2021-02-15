@@ -48,7 +48,7 @@
                     written inside one function is local to that function and cannot be accessed outside this function. Imagine that there are two modules — A and B. The code written inside the module A is
                     enclosed within the function wrapper corresponding to the module A. Similar thing happens with the code written inside the module B. Because the code pertaining to both the modules is
                     enclosed within different functions, these functions will not be able to access the code of each other. (Remember each function in JavaScript has its own local scope?) This is the reason why
-                    module A cannot access the code written inside module B and vice-versa. The five parameters — exports, require, module, filename, dirname are available inside each module in Node.
+                    module A cannot access the code written inside module B and vice-versa. The five parameters — exports, require, module, _filename, _dirname are available inside each module in Node.
                     Though these parameters are global to the code within a module yet they are local to the module (because of the function wrapper as explained above). These parameters provide valuable
                     information related to a module. Let's revisit the circle module, which you looked at earlier. There are three constructs defined in this module — a constant variable PI, a function named
                     calculateArea and another function named calculateCircumference. An important point to keep in mind is that all these constructs are private to the circle module by default. It means that you
@@ -64,8 +64,11 @@
                 </p>
 
             </div>
+            <div class="design-like">
+                <button id= "likePost" onclick="postLiked()" style="background-color: crimson; float: left;width: 7%;padding: 10px 10px; margin-top: 10px; margin-bottom: 20px"><i class="fa fa-thumbs-up"> Like</i></button>
+                <br><br><span id="commentCount1"> </span>
+            </div>
             <div>
-                <button id= "likePost" onclick="postLiked()" style="background-color: crimson; float: left;width: 7%;padding: 10px 10px; margin: auto"><i class="fa fa-thumbs-up"> Like</i></button>
                 <span id="commentCount">Be the first one to like this!</span>
             </div>
             <div>
@@ -74,9 +77,13 @@
             <div>
                 <button id="addList" onclick="addComments(userComments)" style="background-color: crimson; float: left;width: 7%;padding: 10px 10px; margin: auto">Comment</button>
             </div><br>
-            <div id="addEventNames">
+            <div class="all_comm">
                 <h4>All comments</h4>
             </div>
+            <div id="addEventNames" class="u_comm">
+
+            </div>
+
         </div>
         <!-- post ends here -->
 
@@ -129,6 +136,7 @@
     <!-- list of all posts ends here -->
     <script src="https://kit.fontawesome.com/efd7ce0474.js" crossorigin="anonymous"></script>
     <script src="../scripts/post.js" defer></script>
+    <script src="../scripts/common.js" defer></script>
 </body>
 
 </html>

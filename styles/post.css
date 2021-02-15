@@ -173,6 +173,7 @@ hr {
     font-family: 'Abel', sans-serif;
 }
 
+/* Design for Like section */
 .post-block{
     margin: 2% 2% 10% 2%;
 }
@@ -184,18 +185,48 @@ hr {
 
 .author{
     padding-top: 2%;
+    font-family: 'Ubuntu Mono', monospace;
 }
 .post-save{
     display:none;
 }
+/* Design for Description */
+#paraText{
+    text-align:justify;
+}
 .post-desc{
     margin: auto;
 }
+/* Design for Like section */
+.design-like{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#commentCount{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -100px;
+    padding-top: 2%;
+}
+/* Design for comment section */
 #userComments{
     border:solid 1px black;
 }
-#addEventNames{
-    margin: 2% auto 10% auto;
+.all_comm{
+    margin: 2% 2% 2% auto;
+
+}
+.u_comm{
+    margin: 2% 2% 2% auto;
+    background-color: #aaaaaa;
+    padding: 10px 10px 10px 10px;
+}
+.user_comment{
+    flex: auto;
+    flex-grow: initial;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
