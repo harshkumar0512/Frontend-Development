@@ -11,7 +11,7 @@ button {
 }
 
 button:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 
@@ -23,11 +23,13 @@ button:hover {
     text-decoration: none;
     margin: 10px 10px 0px 10px;
 }
-h1{
+
+h1 {
     text-align: left;
     font-family: 'Abel', sans-serif;
 }
-.middleText{
+
+.middleText {
     font-family: 'Ubuntu Mono', monospace;
     margin-top: 0;
     margin: 0 0 0px 10px;

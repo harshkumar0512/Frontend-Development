@@ -12,132 +12,165 @@
 </head>
 
 <body>
-    <!-- TODO: Include code for header here -->
-    <div class="header">
-        <input class="topButtons" type="button" value="Sign In" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
-        <input class="topButtons" type="button" value="Sign Up" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+<!-- TODO: Include code for header here -->
+<div class="header">
+    <input class="topButtons" type="button" value="Sign In"
+           onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+    <input class="topButtons" type="button" value="Sign Up"
+           onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
 
-        <a id="pageTitle" class="logo-title">ScriBBler</a>
-        <p class="middleText">Explore, Imagine, Create</p>
-    </div>
+    <a id="pageTitle" class="logo-title">ScriBBler</a>
+    <p class="middleText">Explore, Imagine, Create</p>
+</div>
 
-    <!-- post starts here -->
-    <div class="post-block">
-        <div class="post-container">
-            <div class="post-title" id="postTitle01">
-                <h2>Everything you should know about 'module' & 'require' in Node.js</h2>
-            </div>
-            <div class="post-author">
-                <p class="author">Srishti Gupta
-                    <span>
-                        <button class="post-edit" id="edit-btn" onclick="editPost()" style="background-color: crimson; float: right;width: 7%;padding: 10px 10px; margin: auto">
+<!-- post starts here -->
+<div class="post-block">
+    <div class="post-container">
+        <div class="post-title" id="postTitle01">
+            <h2>Everything you should know about 'module' & 'require' in Node.js</h2>
+        </div>
+        <div class="post-author">
+            <p class="author">Srishti Gupta
+                <span>
+                        <button class="post-edit" id="edit-btn" onclick="editPost()"
+                                style="background-color: crimson; float: right;width: 7%;padding: 10px 10px; margin: auto">
                             <span id="btn-name">Edit </span> <i class="fa fa-edit" id="icon"></i>
                         </button>
                     </span>
-                </p>
-            </div><br>
-            <div class="post-desc">
-                <p id="paraText">
-                    Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you
-                    can say that you've created a module named xyz. Let's take an example to understand this better. You have a file named circle.js which consists of the logic for calculating the area & the
-                    circumference of a circle of a given radius. You can call circle.js file a module named circle. You might be wondering why is there a need to have multiple modules? You could have just
-                    written all the code in a single module. Well, it is very important to write modular code. By modular, I mean to say that your code should be independent and should be loosely coupled.
-                    Imagine that there's a large application and you have all your code written in just one place, just one file. Too messy, right? How does the code written inside a module run? Before executing
-                    the code written inside a module. Node takes the entire code and encloses it within a function wrapper. The syntax of this function wrapper is: The entire code written inside a module is
-                    private to the module, unless explicitly stated (exported) otherwise. This is the most significant advantage of having modules in Node.js. Even if you define a global variable in a module using
-                    var, let or const keywords, the variables are scoped locally to the module rather than being scoped globally. This happens because each module has a function wrapper of its own and the code
-                    written inside one function is local to that function and cannot be accessed outside this function. Imagine that there are two modules — A and B. The code written inside the module A is
-                    enclosed within the function wrapper corresponding to the module A. Similar thing happens with the code written inside the module B. Because the code pertaining to both the modules is
-                    enclosed within different functions, these functions will not be able to access the code of each other. (Remember each function in JavaScript has its own local scope?) This is the reason why
-                    module A cannot access the code written inside module B and vice-versa. The five parameters — exports, require, module, _filename, _dirname are available inside each module in Node.
-                    Though these parameters are global to the code within a module yet they are local to the module (because of the function wrapper as explained above). These parameters provide valuable
-                    information related to a module. Let's revisit the circle module, which you looked at earlier. There are three constructs defined in this module — a constant variable PI, a function named
-                    calculateArea and another function named calculateCircumference. An important point to keep in mind is that all these constructs are private to the circle module by default. It means that you
-                    cannot use these constructs in any other module unless explicitly specified. So, the question that arises now is how do you specify something in a module that can be used by some other
-                    module? This is when the module & require parameters of the function wrapper are helpful. Let's discuss these two parameters in this article. module The module parameter (rather a keyword
-                    in a module in Node) refers to the object representing the current module. exports is a key of the module object, the corresponding value of which is an object. The default value of
-                    module.exports object is {} (empty object). You can check this by logging the value of module keyword inside any module. Let's check what is the value of module parameter inside the circle
-                    module. Notice that there is a console.log(module); statement at the end of the code in the file given above. When you see the output, it will log the module object, which has a key named
-                    exports and the value corresponding to this key is {} (an empty object). Now, what does the module.exports object do? Well, it is used for defining stuff that can be exported by a module.
-                    Whatever is exported from a module can, in turn, be made available to other modules. Exporting something is quite easy. You just need to add it to the module.exports object. There are three
-                    ways to add something to the module.exports object to be exported. Let's discuss these methods one by one.
+            </p>
+        </div>
+        <br>
+        <div class="post-desc">
+            <p id="paraText">
+                Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing
+                some code and this file is named xyz.js, then this file is treated as a module in Node, and you
+                can say that you've created a module named xyz. Let's take an example to understand this better. You
+                have a file named circle.js which consists of the logic for calculating the area & the
+                circumference of a circle of a given radius. You can call circle.js file a module named circle. You
+                might be wondering why is there a need to have multiple modules? You could have just
+                written all the code in a single module. Well, it is very important to write modular code. By modular, I
+                mean to say that your code should be independent and should be loosely coupled.
+                Imagine that there's a large application and you have all your code written in just one place, just one
+                file. Too messy, right? How does the code written inside a module run? Before executing
+                the code written inside a module. Node takes the entire code and encloses it within a function wrapper.
+                The syntax of this function wrapper is: The entire code written inside a module is
+                private to the module, unless explicitly stated (exported) otherwise. This is the most significant
+                advantage of having modules in Node.js. Even if you define a global variable in a module using
+                var, let or const keywords, the variables are scoped locally to the module rather than being scoped
+                globally. This happens because each module has a function wrapper of its own and the code
+                written inside one function is local to that function and cannot be accessed outside this function.
+                Imagine that there are two modules — A and B. The code written inside the module A is
+                enclosed within the function wrapper corresponding to the module A. Similar thing happens with the code
+                written inside the module B. Because the code pertaining to both the modules is
+                enclosed within different functions, these functions will not be able to access the code of each other.
+                (Remember each function in JavaScript has its own local scope?) This is the reason why
+                module A cannot access the code written inside module B and vice-versa. The five parameters — exports,
+                require, module, _filename, _dirname are available inside each module in Node.
+                Though these parameters are global to the code within a module yet they are local to the module (because
+                of the function wrapper as explained above). These parameters provide valuable
+                information related to a module. Let's revisit the circle module, which you looked at earlier. There are
+                three constructs defined in this module — a constant variable PI, a function named
+                calculateArea and another function named calculateCircumference. An important point to keep in mind is
+                that all these constructs are private to the circle module by default. It means that you
+                cannot use these constructs in any other module unless explicitly specified. So, the question that
+                arises now is how do you specify something in a module that can be used by some other
+                module? This is when the module & require parameters of the function wrapper are helpful. Let's discuss
+                these two parameters in this article. module The module parameter (rather a keyword
+                in a module in Node) refers to the object representing the current module. exports is a key of the
+                module object, the corresponding value of which is an object. The default value of
+                module.exports object is {} (empty object). You can check this by logging the value of module keyword
+                inside any module. Let's check what is the value of module parameter inside the circle
+                module. Notice that there is a console.log(module); statement at the end of the code in the file given
+                above. When you see the output, it will log the module object, which has a key named
+                exports and the value corresponding to this key is {} (an empty object). Now, what does the
+                module.exports object do? Well, it is used for defining stuff that can be exported by a module.
+                Whatever is exported from a module can, in turn, be made available to other modules. Exporting something
+                is quite easy. You just need to add it to the module.exports object. There are three
+                ways to add something to the module.exports object to be exported. Let's discuss these methods one by
+                one.
 
-                </p>
-
-            </div>
-            <div class="design-like">
-                <button id= "likePost" onclick="postLiked()" style="background-color: crimson; float: left;width: 7%;padding: 10px 10px; margin-top: 10px; margin-bottom: 20px"><i class="fa fa-thumbs-up"> Like</i></button>
-                <br><br><span id="commentCount1"> </span>
-            </div>
-            <div>
-                <span id="commentCount">Be the first one to like this!</span>
-            </div>
-            <div>
-                <textarea placeholder="Leave a comment.." id="userComments" value=""></textarea>
-            </div>
-            <div>
-                <button id="addList" onclick="addComments(userComments)" style="background-color: crimson; float: left;width: 7%;padding: 10px 10px; margin: auto">Comment</button>
-            </div><br>
-            <div class="all_comm">
-                <h4>All comments</h4>
-            </div>
-            <div id="addEventNames" class="u_comm">
-
-            </div>
+            </p>
 
         </div>
-        <!-- post ends here -->
-
-        <!-- TODO: Sign UP and Sign In modals are here -->
-        <div id="id01" class="modal">
-            <form class="modal-content" action="/action_page.php">
-                <div class="container">
-                    <span class="close" title="Close Modal" onclick="document.getElementById('id01').style.display='none'">&times;</span>
-                    <h1 class="module-header">Get Started</h1>
-                    <hr>
-                    <label for="name"><b>Name</b></label>
-                    <input type="text" id="name" placeholder="Enter your name" name="name" required>
-
-                    <label for="username"><b>Username</b></label>
-                    <input type="text" id="username" placeholder="Enter your username" name="username" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" id="psw" placeholder="Enter your password" name="psw" required>
-
-                    <label for="psw-repeat"><b>Confirm Password</b></label>
-                    <input type="password" id="psw-repeat" placeholder="Re-enter your password" name="psw-repeat" required>
-
-                    <div class="clearfix">
-                        <button type="submit" class="signupbtn">Sign Up</button>
-                    </div>
-                </div>
-            </form>
+        <div class="design-like">
+            <button id="likePost" onclick="postLiked()"
+                    style="background-color: crimson; float: left;width: 7%;padding: 10px 10px; margin-top: 10px; margin-bottom: 20px">
+                <i class="fa fa-thumbs-up"> Like</i></button>
+            <br><br><span id="commentCount1"> </span>
         </div>
-        <div id="id02" class="modal">
-            <form class="modal-content" action="/action_page.php">
-                <div class="container">
-                    <span class="close" title="Close Modal" onclick="document.getElementById('id02').style.display='none'">&times;</span>
-                    <h1 class="module-header">Welcome Back!</h1>
-                    <hr>
-                    <label for="username"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="username" required>
+        <div>
+            <span id="commentCount">Be the first one to like this!</span>
+        </div>
+        <div>
+            <textarea placeholder="Leave a comment.." id="userComments" value=""></textarea>
+        </div>
+        <div>
+            <button id="addList" onclick="addComments(userComments)"
+                    style="background-color: crimson; float: left;width: 7%;padding: 10px 10px; margin: auto">Comment
+            </button>
+        </div>
+        <br>
+        <div class="all_comm">
+            <h4>All comments</h4>
+        </div>
+        <div id="addEventNames" class="u_comm">
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <div class="clearfix">
-                        <button type="submit" class="signinbtn">Sign In</button>
-                    </div>
-                    <p class="model-para" >Not a member? <a href="#" style="color:dodgerblue" onclick="signUpModel()">Sign Up</a>.</p>
-                </div>
-            </form>
         </div>
 
     </div>
-    <!-- list of all posts ends here -->
-    <script src="https://kit.fontawesome.com/efd7ce0474.js" crossorigin="anonymous"></script>
-    <script src="../scripts/post.js" defer></script>
-    <script src="../scripts/common.js" defer></script>
+    <!-- post ends here -->
+
+    <!-- TODO: Sign UP and Sign In modals are here -->
+    <div id="id01" class="modal">
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <span class="close" title="Close Modal" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+                <h1 class="module-header">Get Started</h1>
+                <hr>
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" placeholder="Enter your name" name="name" required>
+
+                <label for="username"><b>Username</b></label>
+                <input type="text" id="username" placeholder="Enter your username" name="username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw" placeholder="Enter your password" name="psw" required>
+
+                <label for="psw-repeat"><b>Confirm Password</b></label>
+                <input type="password" id="psw-repeat" placeholder="Re-enter your password" name="psw-repeat" required>
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modal">
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <span class="close" title="Close Modal" onclick="document.getElementById('id02').style.display='none'">&times;</span>
+                <h1 class="module-header">Welcome Back!</h1>
+                <hr>
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <div class="clearfix">
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>
+                <p class="model-para">Not a member? <a href="#" style="color:dodgerblue" onclick="signUpModel()">Sign
+                    Up</a>.</p>
+            </div>
+        </form>
+    </div>
+
+</div>
+<!-- list of all posts ends here -->
+<script src="https://kit.fontawesome.com/efd7ce0474.js" crossorigin="anonymous"></script>
+<script src="../scripts/post.js" defer></script>
+<script src="../scripts/common.js" defer></script>
 </body>
 
 </html>

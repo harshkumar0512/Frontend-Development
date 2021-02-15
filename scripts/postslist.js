@@ -1,55 +1,56 @@
-		// Get the modal
-		var modal = document.getElementById('id01');
+// Get the modal
+var modal = document.getElementById('id01');
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-		// Get the modal
-		var modal = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// Get the modal
+var modal = document.getElementById('id02');
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-		// Get the modal
-		var modal = document.getElementById('delete01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// Get the modal
+var modal = document.getElementById('delete01');
 
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		  if (event.target == modal) {
-			modal.style.display = "none";
-		  }
-		}
-		function ConfirmationModal() {
-			console.log('This method is executed');
-			var modal = document.getElementById('delete01');
-			modal.style.display = "block";
-			var link = document.querySelector('.post-card');
-			if(link){
-				id = link.getAttribute('id');
-				console.log(id);
-			}
-		}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
-		//Declare post id
-		var id = null;
+function ConfirmationModal() {
+    console.log('This method is executed');
+    var modal = document.getElementById('delete01');
+    modal.style.display = "block";
+    var link = document.querySelector('.post-card');
+    if (link) {
+        id = link.getAttribute('id');
+        console.log(id);
+    }
+}
 
-		//deletePosts function will take post id and delete that post.
-		function deletePosts(){
+//Declare post id
+var id = null;
 
-			var modal = document.getElementById('delete01');
-			modal.style.display = "none";
-			// call the remaining post to display
-			document.getElementById('post05').innerHTML = '';
-		}
+//deletePosts function will take post id and delete that post.
+function deletePosts() {
 
-		function navigateToPost(){
-			location.replace('../html/post.html');
-		}
+    var modal = document.getElementById('delete01');
+    modal.style.display = "none";
+    // call the remaining post to display
+    document.getElementById('post05').innerHTML = '';
+}
+
+function navigateToPost() {
+    location.replace('../html/post.html');
+}
 
 
